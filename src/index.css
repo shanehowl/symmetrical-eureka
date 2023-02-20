@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.app {
+  height: 100vh;
+}
+.app__header {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.app__content {
+  color: white;
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header__box {
+  width: 200px;
+  height: 200px;
+  background: #6750a4;
+}
+.h3__content {
+  margin-inline-start: calc(100vw * 0.1);
+  margin-inline-end: calc(100vw * 0.1);
+}
+.h3__content--spacer {
+  margin: 4px 0;
+  display: flex;
+}
+.h3__content__btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.part-3__content__btn-container {
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+.h3__content__btn-container--hi-cta {
+  background-color: #d0bcff;
+  color: black;
+}
+.part-2__content--radio-group > label {
+  color: white;
+}
