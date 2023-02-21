@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/symmetrical-eureka/static/css/main.2c8d1426.css",
+    "main.js": "/symmetrical-eureka/static/js/main.c8862fe7.js",
+    "static/js/787.9e9f9fee.chunk.js": "/symmetrical-eureka/static/js/787.9e9f9fee.chunk.js",
+    "index.html": "/symmetrical-eureka/index.html",
+    "main.2c8d1426.css.map": "/symmetrical-eureka/static/css/main.2c8d1426.css.map",
+    "main.c8862fe7.js.map": "/symmetrical-eureka/static/js/main.c8862fe7.js.map",
+    "787.9e9f9fee.chunk.js.map": "/symmetrical-eureka/static/js/787.9e9f9fee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c8d1426.css",
+    "static/js/main.c8862fe7.js"
+  ]
+}
