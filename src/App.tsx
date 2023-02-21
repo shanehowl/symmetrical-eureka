@@ -1,24 +1,10 @@
 import { Button, Radio } from 'antd';
 import { motion } from 'framer-motion';
 import { FC, useState } from 'react';
+import { _Temporary } from './constant';
 
-const Message = {
-  line1: 'Hi, You must be JiaYi.',
-  line2: "Shane mentioned about you a lot. The cute little girl that doesn't like raw food.",
-  line3: "Opps, I wasn't allowed to mention that.",
-  line4: 'Oh well, Great to see you!',
-  line5: "Glad that you don't find me weird.",
-  line6: "Since it's just the both of us. Let me ask you a quesiton.",
-  line7: 'What do you think about Shane?',
-  line8: "Cool? Really? I'm not so sure about that. But, since you said so.",
-  line9: "I'll share with you a little about him.",
-  line10: 'Shane has been getting a lot happier ever since he hang out with you.',
-  line11: "Knowing him for so long, I'm sure this shy guy is madly interested in you. Just doesn't do his job well!",
-  line12: "Anyway, one thing I'm sure he been curious about is,",
-  line13: 'Would you take the honour to be his partner in crime and being one of his important person in his life?',
-  line14: 'Perfect! and just in the right time for Shane to do the rest of the talking!',
-  line15: "If he doesn't. Feel free to refresh this and talk to me again. I'm always available!"
-};
+const Message = JSON.parse(atob(_Temporary));
+
 const App: FC = () => {
   const sentence = {
     hidden: { opacity: 1 },
@@ -79,7 +65,7 @@ const App: FC = () => {
       <div className='app__content'>
         {isPartOne && (
           <motion.h4 className='h3__content' variants={sentence} initial='hidden' animate='visible'>
-            {Message.line1.split('').map((char, index) => {
+            {Message.line1.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -87,7 +73,7 @@ const App: FC = () => {
               );
             })}
             <span className='h3__content--spacer'></span>
-            {Message.line2.split('').map((char, index) => {
+            {Message.line2.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -95,7 +81,7 @@ const App: FC = () => {
               );
             })}
             <span className='h3__content--spacer'></span>
-            {Message.line3.split('').map((char, index) => {
+            {Message.line3.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -103,7 +89,7 @@ const App: FC = () => {
               );
             })}
             <span className='h3__content--spacer'></span>
-            {Message.line4.split('').map((char, index) => {
+            {Message.line4.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -120,7 +106,7 @@ const App: FC = () => {
         )}
         {isPartTwo && (
           <motion.h4 className='h3__content' variants={sentence} initial='hidden' animate='visible'>
-            {Message.line5.split('').map((char, index) => {
+            {Message.line5.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -128,7 +114,7 @@ const App: FC = () => {
               );
             })}
             <span className='h3__content--spacer'></span>
-            {Message.line6.split('').map((char, index) => {
+            {Message.line6.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -136,7 +122,7 @@ const App: FC = () => {
               );
             })}
             <span className='h3__content--spacer'></span>
-            {Message.line7.split('').map((char, index) => {
+            {Message.line7.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -155,7 +141,7 @@ const App: FC = () => {
         )}
         {isPartThree && (
           <motion.h4 className='h3__content' variants={sentence} initial='hidden' animate='visible'>
-            {Message.line8.split('').map((char, index) => {
+            {Message.line8.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -163,7 +149,7 @@ const App: FC = () => {
               );
             })}
             <span className='h3__content--spacer'></span>
-            {Message.line9.split('').map((char, index) => {
+            {Message.line9.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -171,7 +157,7 @@ const App: FC = () => {
               );
             })}
             <span className='h3__content--spacer'></span>
-            {Message.line10.split('').map((char, index) => {
+            {Message.line10.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -179,7 +165,7 @@ const App: FC = () => {
               );
             })}
             <span className='h3__content--spacer'></span>
-            {Message.line11.split('').map((char, index) => {
+            {Message.line11.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -187,7 +173,7 @@ const App: FC = () => {
               );
             })}
             <span className='h3__content--spacer'></span>
-            {Message.line12.split('').map((char, index) => {
+            {Message.line12.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -195,7 +181,7 @@ const App: FC = () => {
               );
             })}
             <span className='h3__content--spacer'></span>
-            {Message.line13.split('').map((char, index) => {
+            {Message.line13.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -217,7 +203,7 @@ const App: FC = () => {
         )}
         {isPartFour && (
           <motion.h4 className='h3__content' variants={sentence} initial='hidden' animate='visible'>
-            {Message.line14.split('').map((char, index) => {
+            {Message.line14.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
@@ -225,7 +211,7 @@ const App: FC = () => {
               );
             })}
             <span className='h3__content--spacer'></span>
-            {Message.line15.split('').map((char, index) => {
+            {Message.line15.split('').map((char: string, index: number) => {
               return (
                 <motion.span key={char + '-' + index} variants={letter}>
                   {char}
